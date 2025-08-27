@@ -1,9 +1,9 @@
-# Sepolia Faucet — Monorepo Setup Guide
+# Sepolia Faucet - Monorepo Setup Guide
 
 This repo has two apps:
 
-- `/backend` — Node/Express faucet API
-- `/frontend` — Next.js UI
+- `/backend` - Node/Express faucet API
+- `/frontend` - Next.js UI
 
 ---
 
@@ -41,7 +41,7 @@ Get some faucet tokens
 
 ---
 
-## 2) Frontend setup
+## 2) Frontend setup (`/frontend`)
 
 Open a new terminal tab:  
 `cd frontend`  
@@ -57,10 +57,6 @@ Frontend will be available at:
 
 ## 3) Endpoints
 
-#### Note
-
-In these endpoints, the chain and token parameters are optional. This was included to demonstrate some level of composability and a later extension to supporting different networks/assets.
-
 - **Get faucet balance**  
   `GET /faucet-balance?chain=11155111&token=ETH`  
   Response: `{ chain, token, balance }`
@@ -74,3 +70,8 @@ In these endpoints, the chain and token parameters are optional. This was includ
   - `{ error: "unsupported chain" }`
   - `{ error: "insufficient faucet balance" }`
   - `{ error: "Recipient has no mainnet ETH" }`
+ 
+#### Note
+
+In these endpoints, the chain and token parameters are optional. This was included to demonstrate some level of composability and a later extension to supporting different networks/assets.
+
