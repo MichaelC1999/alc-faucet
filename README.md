@@ -21,12 +21,15 @@ Fill in the required values in `.env`. You will need an Alchemy API key enabled 
 **Run the backend locally**  
 `npm run dev`
 
-**Quick test**  
+Server will be available at:  
+`http://localhost:2000`
+
+**Quick test (Command Line)**  
 Check the faucet balance
 
 `curl "http://localhost:2000/faucet-balance?chain=11155111&token=ETH"`
 
-Get some faucet tokens (through terminal)
+Get some faucet tokens
 `curl "http://localhost:2000/distribute?to={{RECIPIENT_ADDRESS}}&chain=11155111&token=ETH"`
 
 ### Important considerations
